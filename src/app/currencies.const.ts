@@ -30,7 +30,7 @@ export const CURRENCIES: CurrencyData[] = [
     },
     {
         symbol: 'eth',
-        address: '0x6f386979f14b4D841cB77Bfddd3Afba6f0C6B6a1',
+        address: '0xb794f5ea0ba39494ce839613fffba74279579268',
         balance: undefined,
         apiUrl: 'https://api.ethplorer.io/getAddressInfo/:address?apiKey=freekey',
         getBalance: (data): number => {
