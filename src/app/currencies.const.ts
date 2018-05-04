@@ -23,7 +23,7 @@ export const CURRENCIES: CurrencyData[] = [
         symbol: 'doge',
         address: 'DT1YZYVecn9kBy8vb7yTpozeMxRfQvB8eY',
         balance: undefined,
-        apiUrl: 'http://dogechain.info/api/v1/address/balance/:address',
+        apiUrl: 'https://dogechain.info/api/v1/address/balance/:address',
         getBalance: (data): number => {
             return (data || {}).balance;
         }
@@ -59,7 +59,7 @@ export const CURRENCIES: CurrencyData[] = [
         symbol: 'rdd',
         address: 'RjQU231zo5uXniHBHahFnhB7vzvQHaQ8sC',
         balance: undefined,
-        apiUrl: 'http://live.reddcoin.com/api/addr/:address/balance',
+        apiUrl: 'https://live.reddcoin.com/api/addr/:address/balance',
         getBalance: (data): number => {
             return data / 100000000;
         }
