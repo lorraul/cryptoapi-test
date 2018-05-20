@@ -1,19 +1,21 @@
-<div class="row">
-    <div class="col-12" style="text-align:center">
-        <h1>Crypto api test</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1>Crypto api test</h1>
+        </div>
     </div>
-</div>
-<hr>
-<div class="container">
-    <div class="row" *ngFor="let currency of currencies">
-        <div class="col-2">
-            {{ currency.symbol }}
-        </div>
-        <div class="col-6">
-            {{ currency.address }}
-        </div>
-        <div class="col-4">
-            {{ currency.balance || 'loading' }}
+    <hr>
+    <div class="currency-list">
+        <div class="row" *ngFor="let currency of currencies">
+            <div class="col-12 col-md-2 currency-ticker">
+                {{ currency.symbol }}
+            </div>
+            <div class="col-12 col-md-6 currency-address">
+                {{ currency.address }}
+            </div>
+            <div class="col-12 col-md-4">
+                {{ currency.balance || 'loading' }}
+            </div>
         </div>
     </div>
 </div>

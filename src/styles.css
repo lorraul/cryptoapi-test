@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+.currency-list .row:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.currency-list .row:nth-child(odd) {
+    background-color: #eff0f1;
+}
+
+.currency-ticker {
+    font-weight: bold;
+}
+
+.currency-address {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
